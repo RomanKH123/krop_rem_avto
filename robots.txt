@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://krop-rem-avto.ru/sitemap.xml
