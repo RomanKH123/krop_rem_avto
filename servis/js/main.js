@@ -1,71 +1,20 @@
-function slowScroll(id){
-    $("html, body").animate({
-        scrollTop: $(id).offset().top
-    }, 300);
-    return false;
-}
-
-// Кнопка наверх
-const scrollTop = document.getElementById('scrollTop');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 500) {
-        scrollTop.classList.add('show');
-    } else {
-        scrollTop.classList.remove('show');
-    }
-});
-
-if (scrollTop) {
-    scrollTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+﻿(() => {
+    'use strict';
+    const suggestions = {
+        check: { title: 'Начните с компьютерной диагностики', text: 'Индикатор сообщает об ошибке, но не определяет её причину. Считывание кодов и проверка параметров помогут выбрать следующий шаг.', target: '#diagnostics' },
+        start: { title: 'Обсудите проблему с автоэлектриком', text: 'Расскажите, крутит ли стартер, загораются ли индикаторы и когда появилась проблема. Это поможет мастеру определить, с чего начать проверку.', target: '#electrics' },
+        cold: { title: 'Проверьте систему кондиционирования', text: 'Недостаточное охлаждение может быть связано с утечкой или другими неисправностями. Перед заправкой стоит обсудить проверку системы и давления.', target: '#aircon' },
+        power: { title: 'Сначала выясните причину потери тяги', text: 'Причина может быть в разных системах автомобиля. Компьютерная диагностика поможет сузить поиск и понять, какие проверки нужны дальше.', target: '#diagnostics' }
+    };
+    const buttons = document.querySelectorAll('[data-symptom]');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const item = suggestions[button.dataset.symptom];
+            if (!item) return;
+            buttons.forEach(other => other.setAttribute('aria-pressed', String(other === button)));
+            document.getElementById('symptom-title').textContent = item.title;
+            document.getElementById('symptom-text').textContent = item.text;
+            document.getElementById('symptom-link').setAttribute('href', item.target);
+        });
     });
-}
-
-// Анимации при скролле
-function onEntry(entry) {
-    entry.forEach(change => {
-        if (change.isIntersecting) {
-            change.target.classList.add('element-show');
-        }
-    });
-}
-
-let options = {
-    threshold: [0.3]
-};
-let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('.shap_const_1, .blok-time, .blok-time-vs, .service-card, .schedule-card');
-
-for (let elm of elements) {
-    observer.observe(elm);
-}
-
-// Подсветка активного пункта меню
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-link');
-
-function updateActiveLink() {
-    let current = '';
-    const scrollY = window.scrollY + 100;
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        const sectionId = section.getAttribute('id');
-        
-        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-            current = sectionId;
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
-        }
-    });
-}
-
-window.addEventListener('scroll', updateActiveLink);
-window.addEventListener('load', updateActiveLink);
+})();

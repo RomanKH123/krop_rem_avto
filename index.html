@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Автосервис в Кропоткине — диагностика и ремонт | РЕМ АВТО</title>
-    <meta name="description" content="Автосервис «Кропоткин Рем Авто» в Кропоткине: компьютерная диагностика, автоэлектрика, заправка кондиционеров, чистка форсунок и чип-тюнинг. Запись по телефону.">
+    <meta name="description" content="Автосервис в Кропоткине, Краснодарский край: диагностика, автоэлектрика, кондиционеры, чистка форсунок и чип-тюнинг. Промышленная, 1. Запись: +7 (953) 090-02-00.">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="author" content="Кропоткин Рем Авто">
     <meta name="geo.region" content="RU-KDA">
@@ -14,11 +14,15 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Кропоткин Рем Авто">
     <meta property="og:title" content="Автосервис в Кропоткине — Кропоткин Рем Авто">
-    <meta property="og:description" content="Диагностика и ремонт автоэлектроники, обслуживание автокондиционеров, чистка форсунок и чип-тюнинг в Кропоткине.">
+    <meta property="og:description" content="Диагностика и ремонт автоэлектроники, кондиционеры, чистка форсунок и чип-тюнинг. Краснодарский край, Кропоткин, ул. Промышленная, 1. Запись по телефону.">
     <meta property="og:url" content="https://krop-rem-avto.ru/">
     <meta property="og:image" content="https://krop-rem-avto.ru/img/logotip.png">
     <meta property="og:image:alt" content="Кропоткин Рем Авто — автосервис в Кропоткине">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Автосервис в Кропоткине — Кропоткин Рем Авто">
+    <meta name="twitter:description" content="Диагностика, автоэлектрика, кондиционеры и форсунки. Краснодарский край, Кропоткин, ул. Промышленная, 1. Запись: +7 (953) 090-02-00.">
+    <meta name="twitter:image" content="https://krop-rem-avto.ru/img/logotip.png">
+    <meta name="twitter:image:alt" content="Кропоткин Рем Авто — автосервис в Краснодарском крае">
     <meta name="yandex-verification" content="96b470ac72ed0d7d" />
     <meta name="yandex-metrika-id" content="111523197">
     <meta name="google-site-verification" content="eMkrEUiMLHv2abtJANUX78kRziIdC3nuNgSR4vNER50" />
@@ -45,14 +49,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     
-    <!-- Fotorama -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    
     <!-- Main CSS -->
-    <link rel="stylesheet" href="./servis/style/main.css">
+    <link rel="preload" as="image" href="./img/slide/work-01.jpg" fetchpriority="high">
+    <link rel="stylesheet" href="./servis/style/home.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -62,7 +61,7 @@
       "name": "Кропоткин Рем Авто",
       "legalName": "Коцуба Виктор Анатольевич",
       "taxID": "231304809985",
-      "description": "Автосервис: компьютерная диагностика, ремонт автоэлектроники, обслуживание кондиционеров, чистка форсунок и чип-тюнинг.",
+      "description": "Автосервис в городе Кропоткин, Краснодарский край: компьютерная диагностика, ремонт автоэлектроники, обслуживание кондиционеров, чистка форсунок и чип-тюнинг.",
       "image": "https://krop-rem-avto.ru/img/logotip.png",
       "telephone": ["+7-953-090-02-00", "+7-918-621-11-44"],
       "address": {
@@ -76,300 +75,82 @@
         {"@type": "City", "name": "Кропоткин"},
         {"@type": "AdministrativeArea", "name": "Краснодарский край"}
       ],
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "09:00",
-          "closes": "18:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "09:00",
-          "closes": "17:00"
-        }
-      ],
-      "sameAs": ["https://t.me/viktor123ru"]
+      "sameAs": ["https://t.me/viktor123ru"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Услуги автосервиса Кропоткин Рем Авто",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Компьютерная диагностика автомобиля", "url": "https://krop-rem-avto.ru/#diagnostics", "provider": {"@id": "https://krop-rem-avto.ru/#auto-repair"}}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ремонт автоэлектроники", "url": "https://krop-rem-avto.ru/#electrics", "provider": {"@id": "https://krop-rem-avto.ru/#auto-repair"}}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Обслуживание и заправка автокондиционера", "url": "https://krop-rem-avto.ru/#aircon", "provider": {"@id": "https://krop-rem-avto.ru/#auto-repair"}}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ультразвуковая чистка форсунок", "url": "https://krop-rem-avto.ru/#injectors", "provider": {"@id": "https://krop-rem-avto.ru/#auto-repair"}}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Чип-тюнинг и настройка ЭБУ", "url": "https://krop-rem-avto.ru/#tuning", "provider": {"@id": "https://krop-rem-avto.ru/#auto-repair"}}}
+        ]
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://krop-rem-avto.ru/#website",
+      "url": "https://krop-rem-avto.ru/",
+      "name": "Кропоткин Рем Авто",
+      "inLanguage": "ru-RU",
+      "publisher": {"@id": "https://krop-rem-avto.ru/#auto-repair"}
     }
     </script>
 </head>
 <body>
-    <!-- Header с металлическим эффектом -->
-    <header class="header">
-        <div class="header-top">
-            <div class="container">
-                <div class="header-contact">
-                    <span><i class="fas fa-map-marker-alt"></i> Краснодарский край, г. Кропоткин, ул. Промышленная, 1</span>
-                    <span><i class="fas fa-clock"></i> Пн-Пт: 9:00-18:00 | Сб: 9:00-17:00</span>
-                </div>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <div class="topbar"><div class="container"><span>Кропоткин · ул. Промышленная, 1</span></div></div>
+    <header class="header"><div class="container header-inner">
+        <a class="brand" href="#" aria-label="Кропоткин Рем Авто — главная"><span>РЕМ АВТО<small>КРОПОТКИН</small></span></a>
+        <nav aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#gallery">Мастерская</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a></nav>
+        <a class="header-phone" href="tel:+79530900200">+7 (953) 090-02-00<small>Позвонить в мастерскую ↗</small></a>
+    </div></header>
+    <main id="main">
+        <section class="hero"><div class="container hero-inner">
+            <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> РЕМ АВТО · КРАСНОДАРСКИЙ КРАЙ</p>
+                <h1>Автосервис<br>в <em>Кропоткине</em></h1>
+                <p class="hero-description">Диагностика и ремонт автоэлектроники в Кропоткине, Краснодарский край. Обслуживаем кондиционеры, чистим форсунки и настраиваем ЭБУ. Ждём вас на ул. Промышленной, 1.</p>
+                <div class="actions"><a class="btn btn-primary" href="tel:+79530900200">Записаться по телефону <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="#services">Выбрать услугу <span aria-hidden="true">↓</span></a></div>
+                <p class="hero-note">Диагностика · Автоэлектрика · Кондиционеры · Форсунки</p>
             </div>
-        </div>
-        <div class="header-main">
-            <div class="container">
-                <div class="header-content">
-                    <a href="#" class="logo">
-                        <span class="logo-icon">
-                            <i class="fas fa-tools"></i>
-                        </span>
-                        <span class="logo-text">
-                            <span class="logo-main">КРОПОТКИН</span>
-                            <span class="logo-sub">РЕМ АВТО</span>
-                        </span>
-                    </a>
-                    
-                    <div class="header-phones">
-                        <a href="tel:+79530900200" class="phone-card">
-                            <i class="fas fa-phone-alt"></i>
-                            <span>+7 (953) 090-02-00</span>
-                        </a>
-                        <a href="tel:+79186211144" class="phone-card">
-                            <i class="fas fa-phone-alt"></i>
-                            <span>+7 (918) 621-11-44</span>
-                        </a>
-                    </div>
-                </div>
+            <div class="hero-label"><span class="label-cross" aria-hidden="true">+</span><span>ВНИМАНИЕ К ДЕТАЛЯМ<small>И к тому, что под капотом.</small></span></div>
+        </div><div class="hero-bottom container"><span>РЕМ АВТО / КРОПОТКИН</span><a href="#services">Ближе к решению <span aria-hidden="true">↓</span></a></div></section>
+        <div class="specialties"><div class="container"><span>ЭЛЕКТРОННАЯ ДИАГНОСТИКА</span><b aria-hidden="true">+</b><span>РЕМОНТ АВТОЭЛЕКТРОНИКИ</span><b aria-hidden="true">+</b><span>ОБСЛУЖИВАНИЕ АВТОМОБИЛЯ</span></div></div>
+        <section class="section" id="services"><div class="container">
+            <div class="section-heading"><div><p class="eyebrow">01 / ЧЕМ ПОМОЖЕМ</p><h2>Техника сложная.<br>Выбор — простой.</h2></div><p>Выберите нужное направление или расскажите о проблеме — начнём с неё.</p></div>
+            <div class="service-grid">
+                <article class="service-card" id="diagnostics"><div class="card-top"><span class="service-symbol" aria-hidden="true">⌁</span><span>01</span></div><h3>Компьютерная<br>диагностика</h3><p>Полная диагностика всех систем автомобиля с помощью профессионального оборудования.</p><ul><li>Выявление скрытых неисправностей</li><li>Проверка электронных блоков управления</li><li>Анализ работы датчиков и исполнительных механизмов</li><li>Предотвращение серьезных поломок</li></ul><p class="service-note">Диагностика - первый шаг к качественному ремонту!</p><a href="tel:+79530900200">Обсудить диагностику <span aria-hidden="true">↗</span></a></article>
+                <article class="service-card" id="electrics"><div class="card-top"><span class="service-symbol" aria-hidden="true">ϟ</span><span>02</span></div><h3>Ремонт<br>автоэлектроники</h3><p>Не запускается автомобиль или появились сбои электроники? Обсудим симптомы и поиск неисправности.</p><ul><li>Поиск причины сбоев</li><li>Проверка электронных систем</li></ul><a href="tel:+79530900200">Обсудить неисправность <span aria-hidden="true">↗</span></a></article>
+                <article class="service-card" id="aircon"><div class="card-top"><span class="service-symbol" aria-hidden="true">❄</span><span>03</span></div><h3>Обслуживание<br>кондиционера</h3><p>Профессиональное обслуживание системы кондиционирования.</p><ul><li>Заправка кондиционера хладагентом</li><li>Диагностика утечек</li><li>Чистка и дезинфекция системы</li><li>Проверка давления</li></ul><p class="service-note">Комфортный микроклимат в салоне круглый год!</p><a href="tel:+79530900200">Записаться на обслуживание <span aria-hidden="true">↗</span></a></article>
+                <article class="service-card" id="injectors"><div class="card-top"><span class="service-symbol" aria-hidden="true">≋</span><span>04</span></div><h3>Чистка<br>форсунок</h3><p>Профессиональная ультразвуковая чистка форсунок.</p><ul><li>Восстановление производительности</li><li>Улучшение распыла топлива</li><li>Снижение расхода топлива</li><li>Восстановление мощности двигателя</li></ul><p class="service-note">Регулярная чистка продлевает срок службы форсунок!</p><a href="tel:+79530900200">Уточнить для моего авто <span aria-hidden="true">↗</span></a></article>
             </div>
-        </div>
-        
-        <!-- Навигация с эффектом стали -->
-        <nav class="nav">
-            <div class="container">
-                <ul class="nav-list">
-                    <li><a href="#services" class="nav-link">Услуги</a></li>
-                    <li><a href="#gallery" class="nav-link">Наши работы</a></li>
-                    <li><a href="#schedule" class="nav-link">График</a></li>
-                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section с индустриальным фоном -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Профессиональный <span class="text-highlight">автосервис</span> в Кропоткине
-                </h1>
-                <p class="hero-text">
-                    Компьютерная диагностика • Ремонт автоэлектроники • Чип-тюнинг • Заправка кондиционеров
-                </p>
-                <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary">Наши услуги</a>
-                    <a href="#contacts" class="btn btn-outline">Записаться</a>
-                </div>
-            </div>
-        </div>
-        <div class="hero-pattern"></div>
-    </section>
-
-    <!-- Металлическая разделительная полоса -->
-    <div class="divider">
-        <div class="divider-line"></div>
-        <i class="fas fa-cog divider-icon"></i>
-        <div class="divider-line"></div>
-    </div>
-
-    <!-- Услуги -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Что мы делаем</span>
-                <h2 class="section-title">НАШИ УСЛУГИ</h2>
-                <p class="section-text">Диагностика, ремонт и обслуживание автомобилей в Кропоткине, Краснодарский край</p>
-            </div>
-            
-            <div class="services-grid">
-                <!-- Компьютерная диагностика -->
-                <div class="service-card" onclick="res_1()">
-                    <div class="service-card-inner">
-                        <div class="service-front">
-                            <div class="service-icon">
-                                <i class="fas fa-laptop"></i>
-                            </div>
-                            <h3>Компьютерная диагностика</h3>
-                        </div>
-                        <div class="service-back">
-                            <p>Полная диагностика всех систем автомобиля</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Обслуживание кондиционера -->
-                <div class="service-card" onclick="res_2()">
-                    <div class="service-card-inner">
-                        <div class="service-front">
-                            <div class="service-icon">
-                                <i class="fas fa-wind"></i>
-                            </div>
-                            <h3>Обслуживание кондиционера</h3>
-                        </div>
-                        <div class="service-back">
-                            <p>Заправка и диагностика кондиционера</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Чистка форсунок -->
-                <div class="service-card" onclick="res_3()">
-                    <div class="service-card-inner">
-                        <div class="service-front">
-                            <div class="service-icon">
-                                <i class="fas fa-oil-can"></i>
-                            </div>
-                            <h3>Чистка форсунок</h3>
-                        </div>
-                        <div class="service-back">
-                            <p>Ультразвуковая чистка форсунок</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Чип тюнинг -->
-                <div class="service-card" onclick="res_4()">
-                    <div class="service-card-inner">
-                        <div class="service-front">
-                            <div class="service-icon">
-                                <i class="fas fa-microchip"></i>
-                            </div>
-                            <h3>Чип тюнинг</h3>
-                        </div>
-                        <div class="service-back">
-                            <p>Увеличение мощности двигателя</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- React Root -->
-            <div id="root"></div>
-        </div>
-    </section>
-
-    <!-- Галерея -->
-    <section class="gallery" id="gallery">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Фотогалерея</span>
-                <h2 class="section-title">НАШИ РАБОТЫ</h2>
-            </div>
-            
-            <div class="fotorama" data-loop="true" data-autoplay="3000" data-nav="false" data-width="100%" data-ratio="16/9">
-                <img src="./img/slide/IMG_01.png" alt="Диагностика автомобиля в автосервисе Кропоткина" loading="lazy" width="4929" height="2773">
-                <img src="./img/slide/IMG_02.png" alt="Ремонт автоэлектроники в Кропоткин Рем Авто" loading="lazy" width="5060" height="2846">
-                <img src="./img/slide/IMG_03.png" alt="Обслуживание автомобиля в Кропоткине" loading="lazy" width="4461" height="2510">
-            </div>
-        </div>
-    </section>
-
-    <!-- График работы -->
-    <section class="schedule" id="schedule">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Время работы</span>
-                <h2 class="section-title">ГРАФИК РАБОТЫ</h2>
-            </div>
-            
-            <div class="schedule-grid">
-                <div class="schedule-card">
-                    <div class="schedule-day">
-                        <i class="fas fa-calendar-week"></i>
-                        <span>ПН - ПТ</span>
-                    </div>
-                    <div class="schedule-time">
-                        <i class="fas fa-clock"></i>
-                        <span>9:00 - 18:00</span>
-                    </div>
-                </div>
-                
-                <div class="schedule-card">
-                    <div class="schedule-day">
-                        <i class="fas fa-calendar-day"></i>
-                        <span>СУББОТА</span>
-                    </div>
-                    <div class="schedule-time">
-                        <i class="fas fa-clock"></i>
-                        <span>9:00 - 17:00</span>
-                    </div>
-                </div>
-                
-                <div class="schedule-card sunday">
-                    <div class="schedule-day">
-                        <i class="fas fa-calendar-times"></i>
-                        <span>ВОСКРЕСЕНЬЕ</span>
-                    </div>
-                    <div class="schedule-time">
-                        <i class="fas fa-clock"></i>
-                        <span>ВЫХОДНОЙ</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Контакты -->
-    <section class="contacts" id="contacts">
-        <div class="container">
-            <div class="contacts-grid">
-                <div class="contacts-info">
-                    <span class="section-subtitle">Свяжитесь с нами</span>
-                    <h2 class="section-title">КОНТАКТЫ</h2>
-                    
-                    <div class="contacts-list">
-                        <div class="contacts-item">
-                            <div class="contacts-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <h4>Телефоны</h4>
-                                <a href="tel:+79530900200" class="contacts-link">+7 (953) 090-02-00</a><br>
-                                <a href="tel:+79186211144" class="contacts-link">+7 (918) 621-11-44</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contacts-item">
-                            <div class="contacts-icon">
-                                <i class="fab fa-telegram"></i>
-                            </div>
-                            <div>
-                                <h4>Telegram</h4>
-                                <a href="tg://resolve?domain=viktor123ru" class="contacts-link">@viktor123ru</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contacts-item">
-                            <div class="contacts-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h4>Адрес</h4>
-                                <p class="contacts-text">Краснодарский край, г. Кропоткин, ул. Промышленная, 1</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="contacts-action">
-                        <a href="tel:+79186211144" class="btn btn-primary btn-large">
-                            <i class="fas fa-phone-alt"></i> Позвонить сейчас
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="contacts-image">
-                    <img src="./img/logotip.png" alt="Кропоткин Рем Авто — автосервис в Краснодарском крае" class="contacts-img" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-
+            <div class="tuning" id="tuning"><div><span class="eyebrow">ОТДЕЛЬНОЕ НАПРАВЛЕНИЕ</span><h3>Чип-тюнинг и настройка ЭБУ</h3><p>Профессиональное перепрограммирование ЭБУ двигателя.</p><ul><li>Увеличение мощности и крутящего момента</li><li>Оптимизация расхода топлива</li><li>Улучшение отзывчивости педали газа</li><li>Индивидуальная настройка под ваш стиль вождения</li></ul><p class="service-note">Раскройте потенциал вашего автомобиля!</p><p>Возможности настройки зависят от модели, двигателя и состояния автомобиля. Обсудите детали с мастером.</p></div><a class="btn btn-dark" href="https://t.me/viktor123ru" target="_blank" rel="noopener noreferrer">Спросить в Telegram ↗</a></div>
+        </div></section>
+        <section class="problem-section"><div class="container problem-layout"><div><p class="eyebrow">НАЧНИТЕ С СИМПТОМА</p><h2>Что беспокоит<br>ваш автомобиль?</h2><p>Не обязательно знать название детали.<br>Выберите то, что заметили.</p></div><div><div class="symptoms" aria-label="Выберите симптом"><button type="button" data-symptom="check" aria-pressed="true">Горит Check Engine</button><button type="button" data-symptom="start" aria-pressed="false">Не заводится</button><button type="button" data-symptom="cold" aria-pressed="false">Не холодит кондиционер</button><button type="button" data-symptom="power" aria-pressed="false">Пропала тяга</button></div><div class="symptom-result" aria-live="polite" aria-atomic="true"><h3 id="symptom-title">Начните с компьютерной диагностики</h3><p id="symptom-text">Индикатор сообщает об ошибке, но не определяет её причину. Считывание кодов и проверка параметров помогут выбрать следующий шаг.</p><a id="symptom-link" href="#diagnostics">Подробнее об услуге ↗</a></div><p class="small-note">Это подсказка для выбора услуги, а не диагноз. Причину определяют после проверки автомобиля.</p></div></div></section>
+        <section class="section" id="gallery"><div class="container"><div class="section-heading"><div><p class="eyebrow">02 / ВНУТРИ МАСТЕРСКОЙ</p><h2>Работа, которая<br>остаётся за кадром.</h2></div><p>Двигатель, электроника и десятки деталей.<br>Фотографии из нашей мастерской.</p></div><div class="gallery-grid">
+            <a href="./img/slide/IMG_01.png" target="_blank" rel="noopener noreferrer"><figure><img src="./img/slide/work-01.jpg" alt="Двигатель автомобиля в мастерской" width="4929" height="2773" loading="lazy"><figcaption><span>Под капотом</span><span aria-hidden="true">↗</span></figcaption></figure></a>
+            <a href="./img/slide/IMG_02.png" target="_blank" rel="noopener noreferrer"><figure><img src="./img/slide/work-02.jpg" alt="Работа с автомобилем в автосервисе" width="5060" height="2846" loading="lazy"><figcaption><span>В процессе работы</span><span aria-hidden="true">↗</span></figcaption></figure></a>
+            <a href="./img/slide/IMG_03.png" target="_blank" rel="noopener noreferrer"><figure><img src="./img/slide/work-03.jpg" alt="Обслуживание автомобиля в мастерской" width="4461" height="2510" loading="lazy"><figcaption><span>Внимание к деталям</span><span aria-hidden="true">↗</span></figcaption></figure></a>
+        </div></div></section>
+        <section class="preparation section"><div class="container"><p class="eyebrow">03 / ПЕРЕД ВИЗИТОМ</p><h2>Хороший ремонт начинается<br>с понятного разговора.</h2><div class="steps"><article><span>01</span><h3>Расскажите об автомобиле</h3><p>Назовите марку, модель, год выпуска и двигатель — так проще обсудить вашу задачу.</p></article><article><span>02</span><h3>Опишите симптомы</h3><p>Когда появилась проблема, как часто повторяется и что уже проверяли или меняли.</p></article><article><span>03</span><h3>Договоритесь о визите</h3><p>Уточните у мастера время, порядок диагностики и стоимость нужной услуги.</p></article></div></div></section>
+        <section class="section" id="faq"><div class="container faq-layout"><div><p class="eyebrow">04 / ПОЛЕЗНО ЗНАТЬ</p><h2>До того, как<br>вы приедете.</h2><p>Остались вопросы?<br><a class="text-link" href="https://t.me/viktor123ru" target="_blank" rel="noopener noreferrer">Напишите мастеру в Telegram ↗</a></p></div><div class="faq-list">
+            <details open><summary>Сколько будет стоить ремонт?</summary><p>Стоимость зависит от автомобиля, неисправности и объёма работ. Позвоните, чтобы уточнить цену нужной услуги. Для оценки ремонта может потребоваться диагностика.</p></details>
+            <details><summary>Нужно ли записываться заранее?</summary><p>Лучше предварительно позвонить или написать в Telegram: уточните свободное время и возможность выполнить нужные работы.</p></details>
+            <details><summary>Что сообщить мастеру при записи?</summary><p>Марку, модель, год выпуска, тип двигателя и симптомы. Если есть коды ошибок или фотографии индикаторов, их можно отправить в Telegram.</p></details>
+            <details><summary>Можно ли просто удалить ошибку?</summary><p>Удаление кода само по себе не устраняет причину. Лучше сначала проверить, почему возникла ошибка, и обсудить результаты диагностики с мастером.</p></details>
+        </div></div></section>
+        <section class="contact-section" id="contacts"><div class="container contact-layout"><div><p class="eyebrow">05 / НА СВЯЗИ</p><h2>Давайте разберёмся<br>с вашим автомобилем.</h2><p>Позвоните или напишите. Расскажите, что случилось,<br>и выберите удобное время для визита.</p><a class="big-phone" href="tel:+79530900200">+7 (953) 090-02-00 ↗</a><a class="second-phone" href="tel:+79186211144">+7 (918) 621-11-44</a><a class="btn btn-primary" href="https://t.me/viktor123ru" target="_blank" rel="noopener noreferrer">Написать в Telegram ↗</a></div><div class="visit-card"><p class="eyebrow">ЖДЁМ В МАСТЕРСКОЙ</p><h3>Кропоткин,<br>ул. Промышленная, 1</h3><p>Краснодарский край</p><a class="route-link" href="https://yandex.ru/maps/?text=Кропоткин%2C%20Промышленная%2C%201" target="_blank" rel="noopener noreferrer">Открыть адрес в Яндекс Картах ↗</a></div></div></section>
+    </main>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <h4>KROPOTKIN<span>AUTO</span></h4>
+                    <h4>КРОПОТКИН <span>РЕМ АВТО</span></h4>
                     <p>Автосервис в Кропоткине Краснодарского края. Компьютерная диагностика, ремонт автоэлектроники, обслуживание кондиционеров, чистка форсунок и чип-тюнинг.</p>
                 </div>
                 
@@ -378,7 +159,6 @@
                     <ul>
                         <li><a href="#services">Услуги</a></li>
                         <li><a href="#gallery">Наши работы</a></li>
-                        <li><a href="#schedule">График работы</a></li>
                         <li><a href="#contacts">Контакты</a></li>
                     </ul>
                 </div>
@@ -407,20 +187,8 @@
         </div>
     </footer>
 
-    <!-- Кнопка наверх -->
-    <button id="scrollTop" class="scroll-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-    <script src="./servis/js/main.js"></script>
-    <script src="./servis/js/react.js" type="text/babel"></script>
-    <script src="./servis/js/cookie-consent.js"></script>
+    <div class="mobile-actions"><a href="tel:+79530900200">Позвонить ↗</a><a href="https://t.me/viktor123ru" target="_blank" rel="noopener noreferrer">Telegram ↗</a></div>
+    <script src="./servis/js/main.js" defer></script>
+    <script src="./servis/js/cookie-consent.js" defer></script>
 </body>
 </html>
